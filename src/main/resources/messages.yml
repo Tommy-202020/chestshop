@@ -1,0 +1,140 @@
+prefix: "&#FFD166&lCHESTSHOP &#8A8A8A➠ &r"
+
+general:
+  no-permission: "{prefix}&#FF6B6BYou do not have permission to use this."
+  player-only: "{prefix}&#FF6B6BOnly players can use this command."
+  reloaded: "{prefix}&#7CFF7CPlugin configuration and messages reloaded."
+  invalid-world: "{prefix}&#FF6B6BThat world does not exist."
+  invalid-location: "{prefix}&#FF6B6BThat location is invalid."
+  shop-not-found: "{prefix}&#FF6B6BNo shop exists at that location."
+  chest-not-found: "{prefix}&#FF6B6BThe shop chest was not found or was removed."
+  removed: "{prefix}&#7CFF7CThe shop was removed."
+  remove-usage: "{prefix}&#FFB86BUsage: /chestshop remove <x> <y> <z> <world>"
+
+help:
+  header: "{prefix}&#FFD166&lChestShop Help"
+  help-line: "&#EDEDED/chestshop help &8- &7Show this help"
+  list-line: "&#EDEDED/chestshop list &8- &7List your shops"
+  reload-line: "&#EDEDED/chestshop reload &8- &7Reload config and messages"
+  remove-line: "&#EDEDED/chestshop remove <x> <y> <z> <world> &8- &7Force delete a shop"
+  edit-buy-price-line: "&#EDEDED/chestshop editbuyprice <id> &8- &7Set the buy price on a BOTH shop"
+  edit-sell-price-line: "&#EDEDED/chestshop editsellprice <id> &8- &7Set the sell price on a BOTH shop"
+
+list:
+  empty: "{prefix}&#FFB86BYou do not own any shops."
+  header: "{prefix}&#7CFF7CYou own {count} shop(s):"
+  entry: "&#EDEDED- &f{item} &8| &7{mode} &8| &f{price-display} &8| &7{x}, {y}, {z} &8({world})"
+
+creation:
+  no-item: "{prefix}&#FF6B6BYou must hold an item to create a shop."
+  max-shops: "{prefix}&#FFB86BYou have reached the maximum number of shops."
+  already-shop: "{prefix}&#FF6B6BThat chest already belongs to a shop."
+  no-sign-space: "{prefix}&#FF6B6BThere is no free space for the shop sign on that face of the chest."
+  entity-failed: "{prefix}&#FFB86BThe floating display could not be spawned, but the shop was still created."
+  worldguard-blocked: "{prefix}&#FF6B6BYou cannot create a shop in a protected region."
+  mode-prompt: "{prefix}&#EDEDEDType &fBUY&7 or &fSELL&7. &7for the new shop mode."
+  price-prompt: "{prefix}&#EDEDEDType the price per item for &f{item}&7."
+  invalid-mode: "{prefix}&#FF6B6BPlease type BUY  or SELL."
+  invalid-price: "{prefix}&#FF6B6BPlease type a valid price greater than zero."
+  success: "{prefix}&#7CFF7CShop created for {item} at {price}{currency} per item."
+
+menu:
+  player:
+    header: "{prefix}&#FFD166&lShop"
+    item: "&#EDEDEDItem: &f{item}"
+    owner: "&#EDEDEDOwner: &f{owner}"
+    price: "&#EDEDEDPrice: &f{price-display}"
+    stock: "&#EDEDEDStock: &f{stock}"
+    space: "&#EDEDEDSpace: &f{space}"
+  owner:
+    header: "{prefix}&#FFD166&lYour Shop"
+    item: "&#EDEDEDItem: &f{item}"
+    mode: "&#EDEDEDMode: &f{mode}"
+    price: "&#EDEDEDPrice: &f{price-display}"
+    instructions: "&#8A8A8A(Use [Open Chest] to restock this shop)"
+  ownerinstructions: "&#8A8A8A(Use [Open Chest] to restock this shop)"
+  delete:
+    confirm: "{prefix}&#FFB86BAre you sure you want to delete this shop?"
+
+button:
+  buy:
+    label: "&#55FF55[Buy]"
+    hover: "&#DFFFD6Buy items from this shop"
+  sell:
+    label: "&#55FF55[Sell]"
+    hover: "&#DFFFD6Sell items to this shop"
+  edit-price:
+    label: "&#55CCFF[Edit Price]"
+    hover: "&#DFF6FFType a new price in chat"
+  edit-buy-price:
+    label: "&#55CCFF[Edit Buy Price]"
+    hover: "&#DFF6FFType a new buy price in chat"
+  edit-sell-price:
+    label: "&#55CCFF[Edit Sell Price]"
+    hover: "&#DFF6FFType a new sell price in chat"
+  edit-mode:
+    label: "&#55CCFF[Edit Mode]"
+    hover: "&#DFF6FFType BUY, SELL, or BOTH in chat"
+  delete:
+    label: "&#FF6B6B[Delete Shop]"
+    hover: "&#FFD7D7Open the delete confirmation"
+  confirm:
+    label: "&#7CFF7C[Confirm]"
+    hover: "&#DFFFD6Delete the shop now"
+  cancel:
+    label: "&#FFB86B[Cancel]"
+    hover: "&#FFF0D6Keep the shop"
+  open-chest:
+    label: "&#FFFFFF[Open Chest]"
+    hover: "&#FFE6E6Open chest inventory to restock items"
+  openchest:
+    label: "&#FFFFFF[Open Chest]"
+    hover: "&#FFE6E6Open chest inventory to restock items"
+
+owner:
+  edit-price-prompt: "{prefix}&#EDEDEDType the new price for &f{item}&7."
+  edit-buy-price-prompt: "{prefix}&#EDEDEDType the new buy price for &f{item}&7."
+  edit-sell-price-prompt: "{prefix}&#EDEDEDType the new sell price for &f{item}&7."
+  edit-mode-prompt: "{prefix}&#EDEDEDType the new mode for &f{item}&7."
+  price-updated: "{prefix}&#7CFF7CThe price for {item} was updated to {price}{currency}."
+  buy-price-updated: "{prefix}&#7CFF7CThe buy price for {item} was updated to {price}{currency}."
+  sell-price-updated: "{prefix}&#7CFF7CThe sell price for {item} was updated to {price}{currency}."
+  mode-updated: "{prefix}&#7CFF7CThe mode for {item} was updated to {mode}."
+  delete-success: "{prefix}&#7CFF7CThe shop for {item} was deleted."
+  delete-cancelled: "{prefix}&#FFB86BDelete cancelled for {item}."
+
+shop:
+  amount-prompt: "{prefix}&#EDEDEDType the amount to trade for &f{item}&7."
+  invalid-amount: "{prefix}&#FF6B6BPlease type a valid amount greater than zero."
+  invalid-price: "{prefix}&#FF6B6BPlease type a valid price greater than zero."
+  invalid-mode: "{prefix}&#FF6B6BPlease type BUY, SELL, or BOTH."
+  buy-not-available: "{prefix}&#FF6B6BThis shop does not buy items."
+  sell-not-available: "{prefix}&#FF6B6BThis shop does not sell items."
+  out-of-stock: "{prefix}&#FF6B6BThat shop is out of stock."
+  full: "{prefix}&#FF6B6BThe shop chest is full."
+  not-enough-money: "{prefix}&#FF6B6BYou do not have enough money."
+  not-enough-items: "{prefix}&#FF6B6BYou do not have enough items."
+  owner-no-money: "{prefix}&#FF6B6BThe shop owner does not have enough money."
+  economy-failed: "{prefix}&#FF6B6BEconomy transaction failed."
+  buy-success: "{prefix}&#7CFF7CBought {amount} x {item} for {total}{currency} ({unit-price}{currency} each)."
+  sell-success: "{prefix}&#7CFF7CSold {amount} x {item} for {total}{currency} ({unit-price}{currency} each)."
+  owner-buy-notification: "{prefix}&#FFD166{player} bought {amount} x {item} for {total}{currency}."
+  owner-sell-notification: "{prefix}&#FFD166{player} sold {amount} x {item} for {total}{currency}."
+
+action-bar:
+  buy: "&#7CFF7CBought {amount} x {item}"
+  sell: "&#7CFF7CSold {amount} x {item}"
+
+restock:
+  opened: "{prefix}&#7CFF7CChest opened for restocking. Add or remove items as needed."
+
+break:
+  use-delete: "{prefix}&#FFB86BUse the delete option to remove your shop."
+  not-owner: "{prefix}&#FF6B6BYou cannot break this shop."
+  deleted: "{prefix}&#7CFF7CThe shop was deleted because you broke the chest."
+
+sign:
+  line-1: "&#FFFFFF{item}"
+  line-2: "&#55CCFF{mode}"
+  line-3: "&#FFD166{price-display}"
+  line-4: "&#7CFF7CStock: {stock}"

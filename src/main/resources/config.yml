@@ -1,0 +1,8 @@
+currency-symbol: "$"
+max-shops-per-player: 10
+allow-break-to-delete: false
+floating-item-height-offset: 1.2
+sign-update-on-transaction: true
+action-bar-on-transaction: true
+sign-facing: AUTO
+worldguard-block-creation: true

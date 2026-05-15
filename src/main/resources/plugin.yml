@@ -1,10 +1,28 @@
-name: AsteroidChests
-prefix: CHESTSHOPS
+name: ChestShop
+prefix: CHESTSHOP
 version: '${version}'
 
-main: dev.minecore.asteroidChests.AsteroidChests
-api-version: '1.21.11'
+main: dev.minecore.asteroidChests.ChestShopPlugin
+depend: [Vault]
+softdepend: [WorldGuard]
+api-version: '1.19'
 load: POSTWORLD
 
 authors: [ Tommy_202020 ]
 website: https://minecore.dev
+
+commands:
+  chestshop:
+    description: ChestShop main command
+    usage: /chestshop <help|list|reload|remove>
+
+permissions:
+  chestshop.create:
+    description: Allows creating ChestShop shops
+    default: true
+  chestshop.admin:
+    description: Allows admin ChestShop commands
+    default: op
+  chestshop.limit.*:
+    description: Set maximum shop limit (e.g., chestshop.limit.20 for 20 shops)
+    default: false
