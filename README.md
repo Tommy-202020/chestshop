@@ -5,9 +5,9 @@ A simple, modern, and lightweight chest shop plugin for Minecraft servers.
 ## Features
 
 - Create player chest shops with ease
-- Buy, Sell, and Both shop modes
+- Buy and Sell shop modes
 - Vault economy support
-- Optional WorldGuard protection support
+- Optional WorldGuard support
 - Floating item displays
 - Editable prices and modes
 - Action bar transaction messages
@@ -21,11 +21,11 @@ A simple, modern, and lightweight chest shop plugin for Minecraft servers.
 
 - Minecraft 1.19+
 - Java 17+
-- [Vault](https://www.spigotmc.org/resources/vault.34315/?utm_source=chatgpt.com)
+- Vault
 - Economy plugin (EssentialsX Economy, CMI, etc.)
 
 ### Optional
-- [WorldGuard](https://enginehub.org/worldguard/?utm_source=chatgpt.com)
+- WorldGuard
 
 ---
 
@@ -48,7 +48,7 @@ To create a shop:
 - **SHIFT + LEFT CLICK** the chest
 
 You will then be prompted in chat to:
-1. Select the shop mode (`BUY`, `SELL`, or `BOTH`)
+1. Select the shop mode (`BUY` or `SELL`)
 2. Enter the item price
 
 ---
@@ -75,3 +75,20 @@ You will then be prompted in chat to:
 Example:
 ```txt
 chestshop.limit.20
+```
+
+Allows a player to create up to 20 shops.
+
+---
+
+## Authors
+
+- Tommy_202020
+
+## Sponsored By
+
+- AsteroidMC
+
+## License
+
+MIT License
