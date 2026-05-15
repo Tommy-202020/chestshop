@@ -1,0 +1,10 @@
+name: AsteroidChests
+prefix: CHESTSHOPS
+version: '${version}'
+
+main: dev.minecore.asteroidChests.AsteroidChests
+api-version: '1.21.11'
+load: POSTWORLD
+
+authors: [ Tommy_202020 ]
+website: https://minecore.dev
